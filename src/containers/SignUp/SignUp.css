@@ -1,0 +1,56 @@
+.inputLabels_signup {
+    float: unset;
+    font-weight: bold;
+    padding-top:30px;
+}
+
+.signUpContainer_signup {
+    padding-top: 100px;
+}
+
+.inputPrepend_signup {
+    background: #dddddd;
+}
+
+.fa_signup {
+    padding-top: 10%;
+}
+
+.signup_user_card_signup {
+    height: 750px;
+    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #353232;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+ 
+
+}
+.brand_logo_container_signup {
+    position: absolute;
+    height: 120px;
+    width: 220px;
+    top: -30px;
+    border-radius: 0%;
+    background: #e40888;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo_signup {
+    height: 100px;
+    width: 200px;
+    border-radius: 0%;
+    border: 2px solid white;
+}
+
+.form_container_signup {
+    margin-top: 100px;
+}
