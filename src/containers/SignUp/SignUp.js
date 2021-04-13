@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Container, Form, InputGroup} from 'react-bootstrap'
 import {Redirect} from "react-router-dom";
 import {FaAt, FaKey, FaUser} from 'react-icons/fa';
-
+import axios from 'axios';
 import './SignUp.css'
 
 
@@ -30,7 +30,7 @@ class SignUp extends React.Component {
         };
         event.preventDefault();
         console.log(authData);
-        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAojn4pWJv-oo2I24rmVYd8cgO8VxcO9rQ', authData)
+        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCQ6vF3HWVTG5JbV_emXJBTBqgd_lL2Jh4', authData)
             .then(response => {
                 console.log(response)
                 localStorage.setItem('token', JSON.stringify(response.data));

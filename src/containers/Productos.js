@@ -2,17 +2,13 @@ import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap'
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
+import axios from 'axios';
 
-
-import {TiShoppingCart, AiOutlineWoman,BsPersonSquare} from 'react-icons/all';
-
-
-import ListaProductos from '../components/ListaProductos/ListaProductos'
-
+import {TiShoppingCart} from 'react-icons/all';
+import ListaProductos from '../components/ListaProductos/ListaProductos';
 import ConfirmacionPedidoModal from '../components/Modals/ConfirmacionPedidoModal/ConfirmacionPedidoModal';
 import FormularioModal from '../components/Modals/FormularioModal/FormularioModal';
 import AgradecimientoModal from '../components/Modals/AgradecimientoModal/AgradecimientoModal';
-
 import Header from "../components/Header/Header";
 import {AppContext} from "../App";
 

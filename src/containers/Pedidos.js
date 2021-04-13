@@ -6,6 +6,7 @@ import ListaPedidos from "../components/ListaPedidos/ListaPedidos";
 import ConfirmacionBorrarPedidoModal from "../components/Modals/ConfirmacionBorrarPedidoModal/ConfirmacionBorrarPedidoModal";
 import {Redirect} from "react-router-dom";
 import Header from "../components/Header/Header";
+import axios from 'axios';
 
 
 function Alert(props) {
