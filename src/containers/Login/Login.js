@@ -28,7 +28,7 @@ class Login extends React.Component {
         }
         event.preventDefault();
 
-        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCQ6vF3HWVTG5JbV_emXJBTBqgd_lL2Jh4', authData)
+        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDhHGxeVNcXRJzwQY99KZZMtZ_ftwsD_a8', authData)
             .then(response => {
                 console.log(response)
                 localStorage.setItem('token', JSON.stringify(response.data));

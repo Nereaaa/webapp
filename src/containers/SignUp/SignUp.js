@@ -30,7 +30,7 @@ class SignUp extends React.Component {
         };
         event.preventDefault();
         console.log(authData);
-        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCQ6vF3HWVTG5JbV_emXJBTBqgd_lL2Jh4', authData)
+        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDhHGxeVNcXRJzwQY99KZZMtZ_ftwsD_a8', authData)
             .then(response => {
                 console.log(response)
                 localStorage.setItem('token', JSON.stringify(response.data));
@@ -40,8 +40,9 @@ class SignUp extends React.Component {
             .catch(err => {
                 console.log(err);
                 this.props.setAuthentication(false, {});
+                alert('¿Quizás la contraseña es demasiado corta? Minimo 6 cáracteres.¿Quizás ya se ha registrado anteriormente con este correo?')
             });
-            alert('¿Quizás la contraseña es demasiado corta? Minimo 6 cáracteres.¿Quizás ya se ha registrado anteriormente con este correo?')
+            
     };
 
     handleChange = (event) => {
