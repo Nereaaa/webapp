@@ -88,7 +88,7 @@ class FormularioModal extends React.Component {
                         <Form.Label>Dirección</Form.Label>
                         <Form.Control type="text" required placeholder="Introduce tu dirección" onChange={(event) => this.setState({direccion: event.target.value})}/>
                         <Form.Text className="text-muted">
-                            El envío se realizara a esta dirección.
+                            El envío se realizará a esta dirección.
                         </Form.Text>
                     </Form.Group>
                 </Form>
