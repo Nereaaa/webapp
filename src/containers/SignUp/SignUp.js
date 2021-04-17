@@ -30,7 +30,7 @@ class SignUp extends React.Component {
         };
         event.preventDefault();
         console.log(authData);
-        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDhHGxeVNcXRJzwQY99KZZMtZ_ftwsD_a8', authData)
+        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBdlZ8cKDwmgRSyVg7gKg_iUdV1pPd0fQM', authData)
             .then(response => {
                 console.log(response)
                 localStorage.setItem('token', JSON.stringify(response.data));

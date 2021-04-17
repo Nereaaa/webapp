@@ -45,7 +45,7 @@ class Pedido extends React.Component {
                 {'__'}Email de contacto : {email} 
                 </Row>
                 <Row>
-                {'__'}Dirección de entrega del pedido : {direccion}
+                {'__'}Dirección de entrega : {direccion}
                 </Row>
                 <Row>
                     <Col sm="8"/>

@@ -74,7 +74,7 @@ class FormularioModal extends React.Component {
                 <Modal.Body>
                 <Form noValidate validated={this.state.validado} onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formBasicName">
-                        <Form.Label>Nombre y apellidos del solicitante </Form.Label>
+                        <Form.Label>Nombre y apellidos </Form.Label>
                         <Row>
                             <Col>
                             <Form.Control required type="text" placeholder="Nombre" onChange={(event) => this.setState({nombre: event.target.value})}/>
@@ -88,7 +88,7 @@ class FormularioModal extends React.Component {
                         <Form.Label>Dirección</Form.Label>
                         <Form.Control type="text" required placeholder="Introduce tu dirección" onChange={(event) => this.setState({direccion: event.target.value})}/>
                         <Form.Text className="text-muted">
-                            El envío se realizara a la dirección correspondiente.
+                            El envío se realizara a esta dirección.
                         </Form.Text>
                     </Form.Group>
                 </Form>

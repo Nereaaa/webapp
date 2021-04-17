@@ -28,7 +28,7 @@ class Login extends React.Component {
         }
         event.preventDefault();
 
-        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDhHGxeVNcXRJzwQY99KZZMtZ_ftwsD_a8', authData)
+        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBdlZ8cKDwmgRSyVg7gKg_iUdV1pPd0fQM', authData)
             .then(response => {
                 console.log(response)
                 localStorage.setItem('token', JSON.stringify(response.data));
@@ -103,7 +103,7 @@ class Login extends React.Component {
                                     Iniciar Sesión
                                 </Button>
                                 <p style={{fontWeight: "bold", color:'#ffffff', padding: 20}}>
-                                    No tienes una cuenta? <Link to='/registro' style={{color: '#ff3d3c'}}>Registrate</Link>
+                                    No tienes una cuenta? <Link to='/registro' style={{color: '#ff3d3c'}}>Regístrate</Link>
                                 </p>
                             
                             </Form>

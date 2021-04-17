@@ -10,9 +10,10 @@ class Header extends React.Component {
             <Container>
                 <Navbar collapseOnSelect expand="sm"  variant="dark" style={{paddingRight: 45, background:'#353232'}}>
                     <Navbar.Brand href="/productos" style={{color:'#e412f9'}}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVu1c5flyQ0WwCwR62FrCcohUpqZ6C3PGig&usqp=CAU" alt='...' height="100" style={{marginRight: 10}}/>{' '}
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVu1c5flyQ0WwCwR62FrCcohUpqZ6C3PGig&usqp=CAU" alt='...' height="100" width='170' style={{marginRight: 10}}/>{' '}
                         <b> Beauty Up</b>
                     </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight: 20}}/>
                     <Navbar.Collapse id="responsive-navbar-nav"  className='justify-content-center'>
                             <ul className="navbar-nav">
                                 <li style={{paddingLeft: 20}}>
@@ -30,7 +31,6 @@ class Header extends React.Component {
                                     {!autenticado &&
                                        <FaUserCircle size={20} style={{color:'#000000'}} />  
                                     } 
-                                    
                                     {email}                               
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu > 
